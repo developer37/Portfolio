@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mainproject</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans bg-gray-50">
+  <header class="bg-slate-900 py-3 px-6">
+    <nav class="max-w-7xl mx-auto">
+      <ul class="text-white flex gap-x-8 gap-y-2 items-center justify-between flex-wrap text-sm">
+        <li class="font-semibold text-base">
+          <i class="fa-solid fa-code mr-2"></i>Alex Chen
+        </li>
+        <div class="flex gap-x-6 gap-y-2 flex-wrap">
+          <li>
+            <a href="#home" class="hover:text-gray-300 transition-colors"><i class="fa-solid fa-house mr-1"></i>Home</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-gray-300 transition-colors"><i
+                class="fa-solid fa-folder mr-1"></i>Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-gray-300 transition-colors"><i
+                class="fa-solid fa-gears mr-1"></i>Skills</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-gray-300 transition-colors"><i
+                class="fa-solid fa-user mr-1"></i>About</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-gray-300 transition-colors"><i
+                class="fa-solid fa-envelope mr-1"></i>Contact</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-indigo-700 via-indigo-800 to-purple-900 text-white py-20 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">Welcome to My Digital Playground</h1>
+          <p class="text-lg text-indigo-100">
+            I'm Alex Chen, a passionate full-stack developer who transforms ideas into interactive web experiences.
+          </p>
+          <div class="flex gap-4 flex-wrap">
+            <button type="button"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full px-6 py-3 font-medium transition-colors flex items-center gap-2">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i>View My Work
+            </button>
+            <button type="button"
+              class="bg-transparent hover:bg-white/10 text-white rounded-full px-6 py-3 font-medium border-2 border-white/30 transition-colors flex items-center gap-2">
+              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>Download Resume
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <div class="text-indigo-300">
+            <i class="fa-solid fa-laptop-code fa-10x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16 bg-gray-50">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Innovative solutions that showcase my technical expertise</p>
+      </div>
+
+
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="bg-green-600 p-4">
+            <h3 class="text-xl font-bold text-white"><i class="fa-solid fa-leaf mr-2" aria-hidden="true"></i>EccoTracker
+              App</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-gray-600">A responsive web application that helps users track their carbon footprint with
+              interactive charts and gamification features.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">React</span>
+              <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">Node.js</span>
+              <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">MongoDB</span>
+              <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">D3.js</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <button
+                class="text-indigo-600 hover:text-indigo-800 border border-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>Live Site
+              </button>
+              <button
+                class="text-gray-600 hover:text-gray-800 border border-gray-400 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>Github
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="bg-blue-600 p-4">
+            <h3 class="text-xl font-bold text-white"><i class="fa-solid fa-list-check mr-2"
+                aria-hidden="true"></i>TaskFlow Dashboard</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-gray-600">A modern project management dashboard with real-time collaboration features and
+              animated data visualizations.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Vue.js</span>
+              <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Express.js</span>
+              <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Socket.io</span>
+              <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-full">Chart.js</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <button
+                class="text-indigo-600 hover:text-indigo-800 border border-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>Live Site
+              </button>
+              <button
+                class="text-gray-600 hover:text-gray-800 border border-gray-400 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>Github
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="bg-yellow-500 p-4">
+            <h3 class="text-xl font-bold text-gray-900"><i class="fa-solid fa-utensils mr-2"
+                aria-hidden="true"></i>Recipe Finder PWA</h3>
+          </div>
+          <div class="p-6 space-y-4">
+            <p class="text-gray-600">A progressive web app that suggests recipes based on available ingredients with
+              offline functionality.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-yellow-500 font-bold text-xs px-3 py-1 rounded-full">JavaScript</span>
+              <span class="bg-yellow-500 font-bold text-xs px-3 py-1 rounded-full">Service Workers</span>
+              <span class="bg-yellow-500 font-bold text-xs px-3 py-1 rounded-full">Firebase</span>
+              <span class="bg-yellow-500 font-bold text-xs px-3 py-1 rounded-full">API Integration</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <button
+                class="text-indigo-600 hover:text-indigo-800 border border-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>Live Site
+              </button>
+              <button
+                class="text-gray-600 hover:text-gray-800 border border-gray-400 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center gap-1">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>Github
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-16 bg-white">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">My Technical Arsenal</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Technologies and tools I use to bring ideas to life</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="bg-gray-50 rounded-lg p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+          <div class="text-indigo-600 flex justify-center">
+            <i class="fa-brands fa-html5 fa-4x" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Frontend Development</h3>
+          <p class="text-gray-600 text-sm">HTML5, CSS3, JavaScript ES6+, React, Vue.js, TypeScript, Bootstrap, Tailwind
+            CSS</p>
+        </article>
+
+        <article class="bg-gray-50 rounded-lg p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+          <div class="text-indigo-600 flex justify-center">
+            <i class="fa-solid fa-server fa-4x" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Backend Development</h3>
+          <p class="text-gray-600 text-sm">Node.js, Express.js, Python, Django, RESTful APIs, GraphQL, JWT
+            Authentication</p>
+        </article>
+
+        <article class="bg-gray-50 rounded-lg p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+          <div class="text-indigo-600 flex justify-center">
+            <i class="fa-solid fa-database fa-4x" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Database & Cloud</h3>
+          <p class="text-gray-600 text-sm">MongoDB, PostgreSQL, MySQL, Firebase, AWS, Google Cloud, Docker, Git
+            Deployment</p>
+        </article>
+
+        <article class="bg-gray-50 rounded-lg p-8 text-center space-y-4 hover:shadow-lg transition-shadow">
+          <div class="text-indigo-600 flex justify-center">
+            <i class="fa-solid fa-paintbrush fa-4x" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Design & Tools</h3>
+          <p class="text-gray-600 text-sm">Figma, Adobe XD, Responsive Design, Accessibility, Performance Optimization
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16 bg-gray-50">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="space-y-6">
+          <h2 class="text-4xl font-bold text-gray-900">About Me</h2>
+          <p class="text-gray-600 leading-relaxed">
+            Hi! I'm Alex, a full-stack developer with 3+ years of experience creating digital solutions that make a
+            difference.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            My journey began with a Computer Science degree, but my real education happened through countless hours of
+            coding, debugging, and building projects that solve real-world problems.
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or
+            sharing my knowledge through tech blog posts and mentoring fellow developers.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-4xl font-bold text-indigo-600 mb-2">3+</h3>
+            <p class="text-gray-600 font-medium">Years Experience</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-4xl font-bold text-indigo-600 mb-2">25+</h3>
+            <p class="text-gray-600 font-medium">Projects Completed</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-4xl font-bold text-indigo-600 mb-2">98%</h3>
+            <p class="text-gray-600 font-medium">Client Satisfaction</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-4xl font-bold text-indigo-600 mb-2">150+</h3>
+            <p class="text-gray-600 font-medium">GitHub Contributions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-slate-900 text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Let's Build Something Amazing Together</h2>
+        <p class="text-gray-300">Ready to turn your ideas into reality? I'd love to hear about your project.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div class="text-center space-y-2">
+          <div class="text-indigo-400 text-2xl">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-semibold">Email</h3>
+          <a href="mailto:alex.chen@example.com"
+            class="text-gray-300 hover:text-indigo-400 transition-colors text-sm">alex.chen.dev@example.com</a>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="text-indigo-400 text-2xl">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-semibold">Phone</h3>
+          <p class="text-gray-300 text-sm">(555) 123-4567</p>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="text-indigo-400 text-2xl">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-semibold">Location</h3>
+          <p class="text-gray-300 text-sm">San Francisco, CA</p>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="text-indigo-400 text-2xl">
+            <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-semibold">Connect</h3>
+          <nav class="flex justify-center gap-4 mt-2" aria-label="Social media links">
+            <a href="https://www.linkedin.com/in/waltermangra/"
+              class="text-gray-300 hover:text-indigo-400 transition-colors" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/developer37/FS-wmmbl-Bootcamp-Cohort"
+              class="text-gray-300 hover:text-indigo-400 transition-colors" aria-label="GitHub">
+              <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-indigo-400 transition-colors" aria-label="Twitter">
+              <i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-indigo-400 transition-colors" aria-label="Dribbble">
+              <i class="fa-brands fa-dribbble fa-lg" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-400 text-sm border-t border-gray-700 pt-8">
+        <p>&copy; 2024 Alex Chen. Crafting digital experiences with passion and precision.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
